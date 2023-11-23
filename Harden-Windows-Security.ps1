@@ -558,10 +558,10 @@ try {
 
     #region RequirementsCheck
     # check if user's OS is Windows Home edition
-    if ((Get-CimInstance -ClassName Win32_OperatingSystem).OperatingSystemSKU -eq '101') {
-        Write-Error -Message 'Windows Home edition detected, exiting...'
-        break
-    }
+    #if ((Get-CimInstance -ClassName Win32_OperatingSystem).OperatingSystemSKU -eq '101') {
+        #Write-Error -Message 'Windows Home edition detected, exiting...'
+        #break
+    #}
 
     # check if user's OS is the latest build
     # Get OS build version
